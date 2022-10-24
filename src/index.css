@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Josefin+Sans:wght@100;400&family=Kantumruy+Pro:ital,wght@0,400;0,500;1,300;1,400&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  background-image: url(./assets/cold.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.app-warm {
+  background-color: url(./assets/warm.png);
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(55, 255, 225), rgba(28, 243, 250, 0.75));
+  padding: 4rem;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 4.69rem;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 1rem 1rem;
+  margin-top: -2rem;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 1.2rem;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.location-box .location {
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;  
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 1.9rem auto;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 5.5rem;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
